@@ -1,0 +1,154 @@
+html {
+  width: 100vw;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(208, 208, 208, 1) 100%
+  );
+  background-repeat: no-repeat;
+}
+body {
+  margin: 0px 8px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  height: 75%;
+  width: 80%;
+  box-shadow: 0px 0px 25px rgb(40, 40, 40);
+  border-radius: 15px;
+}
+
+.row {
+  padding: 20px 35px;
+  text-align: start;
+  width: 350px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+img {
+  width: 135px;
+  height: 84px;
+}
+h2 {
+  font-family: "Audiowide", cursive;
+  font-size: 33px;
+  margin: 0px;
+  cursor: default;
+}
+p {
+  font-family: "Bruno Ace", cursive;
+  font-size: 17px;
+  margin: 0px 5px;
+  cursor: default;
+}
+#sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0px 0px 15px;
+  transition: transform 0.2s;
+}
+#suv {
+  background-color: hsl(184, 100%, 22%);
+  transition: transform 0.2s;
+}
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 15px 15px 0px;
+  transition: transform 0.2s;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  margin-top: 25px;
+  height: 50px;
+  width: 200px;
+  border: 2px solid white;
+  font-family: "Audiowide", cursive;
+  font-size: 16px;
+  color: white;
+  border-radius: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  margin-top: 15px;
+}
+.attribution p{
+  font-size: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#sedan:hover,
+#suv:hover,
+#luxury:hover {
+  transform: scale(1.2);
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px rgb(40, 40, 40);
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+@media (max-width: 575px) {
+  html {
+    width: 100vw;
+    height: fit-content;
+  }
+  body {
+    display: flex;
+    height: fit-content;
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: fit-content;
+    margin: 80px 20px 0px 20px;    
+  }
+  .row {
+    height: 500px;
+    width: fit-content;
+    display: flex;
+    padding: 20px 30px;
+  }
+
+  #sedan {
+    border-radius: 15px 15px 0px 0px;
+  }
+  #luxury {
+    border-radius: 0px 0px 15px 15px;
+  }
+  .attribution {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    display: flex;
+  }
+
+}
+
