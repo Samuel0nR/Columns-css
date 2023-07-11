@@ -25,7 +25,7 @@
 
   ### Links
 
-  - Live Site URL: [NETLIFY]([https://your-live-site-url.com](https://resilient-jelly-106cac.netlify.app))
+  - Live Site URL: [https://resilient-jelly-106cac.netlify.app]
 
 ## My process
 
